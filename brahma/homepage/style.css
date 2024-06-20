@@ -1,0 +1,164 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF8852;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 1;
+    width: 500rem;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+  }
+  
+  /* li a:hover {
+    background-color: #111;
+  } */
+
+  /* using margin on home to ensure side bar has space and it matches with the diagram */
+  .home{
+    margin-left: 300px;
+  }
+
+  /* styling the current location part  */
+  .location{
+    padding: 0; 
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 0.7rem;
+  }
+
+/* styling the camera icon */
+
+.camera{
+    font-size: 1.5rem;
+    margin-left: 10px; 
+    padding: 0;
+}
+.notification{
+    
+    font-size: 1.4rem;
+}
+
+.sidebar{
+    margin-top: 10px; 
+    margin-left: 10px; 
+    width:20px; 
+    height: 20px; 
+    background-color: #FF8852;
+    border: none; 
+    font-size: 1.2rem;
+}
+
+.sos{
+    position: absolute;
+    z-index: 3;
+
+    margin-top: 250px;
+    text-align: center;
+    margin-left: 520px;
+}
+
+.sos-btn{
+    width: 200px; 
+    height: 200px; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FF8852;
+    border: 10px solid ;
+    border-radius: 100px;
+    border-color: grey;
+}
+
+/* text-box */
+
+.text-box{
+  position: absolute;
+  z-index: 4;
+  margin-top: 20px;
+  margin-left: 450px;
+  margin-bottom: 200px;
+  text-align: center;
+  
+
+
+}
+
+.text-box p{
+
+  margin-top: 30px;
+  color: #3631A9; 
+}
+
+.text-box h1{
+
+  margin-top: 50px;
+}
+
+/* sidepannel */
+
+.sidepannel{
+
+  background-color: grey; 
+  font-size: 30px;
+  display: block;
+  width: 150px; 
+  height: 600px;
+  position: absolute; 
+  
+
+
+}
+
+.sidepannel a{
+
+  text-decoration: none;
+}
+
+  /* sidepannel close btn  */
+
+  .sidepannel .closebtn{
+    position: absolute;
+    margin-left: 120px;
+  }
+
+  /* configuring the profile photo*/
+
+
+  .sidepannel .profile{
+    margin-top: 20px;
+    margin-left: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 60px;
+    height: 60px; 
+    background-color: rgb(98, 91, 186);
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: black;
+    
+  }
+
+
+
+

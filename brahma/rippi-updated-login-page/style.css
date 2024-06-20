@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5a623, #f8e71c);
+    color: #333;
+    padding: 20px; /* Added padding to avoid edge issues on small screens */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Adjusted padding for better spacing */
+    max-width: 400px; /* Reduced max-width for smaller screens */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-container {
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+    font-weight: 700;
+    color: #4A90E2;
+    font-size: 22px; /* Adjusted font size for smaller screens */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 12px; /* Reduced padding for smaller screens */
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]::placeholder {
+    color: #999;
+}
+
+input[type="email"]:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+button {
+    padding: 12px 20px; /* Adjusted padding for smaller screens */
+    border: none;
+    border-radius: 8px;
+    background-color: #4A90E2;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#google-btn {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+#google-btn:hover {
+    background-color: #357ae8;
+}
+
+.divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    line-height: 0.1em;
+    margin: 20px 0;
+    color: #999;
+}
+
+.divider span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    input[type="email"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .divider {
+        margin: 15px 0;
+    }
+}

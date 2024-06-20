@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahma - Emergency Help</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <button class="sidebar" onclick="openNav()">☰ Brahma</button>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+                <li class="nav-item location"><span>📌 4th Mount, New Delhi</span></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-camera"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell"></i></a></li>
+            </ul>
+        </nav>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="hero-section">
+            <div class="text-box">
+                <h1>Are you in an emergency?</h1>
+                <p>Press the SOS button, your live location will be shared with the nearest help center and your emergency contacts.</p>
+            </div>
+            <div class="sos">
+                <button class="sos-btn">SOS</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="emergency-contact">
+            <h2>Emergency Contact Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="info-sections">
+            <div class="info-card">
+                <h2>Safety Tips</h2>
+                <ul>
+                    <li>Stay informed about the type of disasters that could affect your area.</li>
+                    <li>Prepare an emergency kit with essentials.</li>
+                    <li>Create a family emergency plan and practice it regularly.</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2>Latest News</h2>
+                <ul>
+                    <li><a href="#">Flood warnings issued for the coastal areas.</a></li>
+                    <li><a href="#">New earthquake preparedness guidelines released.</a></li>
+                    <li><a href="#">Volunteer opportunities for disaster relief.</a></li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="#">Emergency Contacts</a></li>
+                    <li><a href="#">Shelter Locations</a></li>
+                    <li><a href="#">Disaster Preparedness Guides</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Affected Areas Map</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Brahma</h2>
+                <p>We are committed to providing timely and effective emergency response and disaster management services.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: support@brahma.com</p>
+                <p>Phone: +91 12345 67890</p>
+                <p>Address: 4th Mount, New Delhi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
